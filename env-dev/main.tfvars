@@ -12,5 +12,19 @@ parameters = [
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.vardevops.online:27017/users" },
   { name = "dev.cart.redis_host", value = "redis-dev.vardevops.online" },
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.vardevops.online" },
-  { name = "dev.cart.catalogue_port", value = "8080" }
+  { name = "dev.cart.catalogue_port", value = "8080" },
+  { name = "dev.shipping.cart_endpoint", value = "cart-dev.vardevops.online:8080" },
+  { name = "dev.shipping.db_host", value = "mysql-dev.vardevops.online" },
+  { name = "dev.shipping.db_user", value = "root" },
+  { name = "dev.payment.cart_host", value = "cart-dev.vardevops.online" },
+  { name = "dev.payment.cart_port", value = "8080" },
+  { name = "dev.payment.user_host", value = "user-dev.vardevops.online" },
+  { name = "dev.payment.user_port", value = "8080" },
+  { name = "dev.payment.amqp_host", value = "rabbitmq-dev.vardevops.online" },
+  { name = "dev.payment.amqp_user", value = "roboshop" }
+]
+
+passwords = [
+  { name = "dev.payment.amqp_pass", value = "roboshop123" },
+  { name = "dev.shipping.db_pass", value = "RoboShop@1" }
 ]
