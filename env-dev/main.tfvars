@@ -22,6 +22,12 @@ parameters = [
   { name = "dev.payment.user_port", value = "8080" },
   { name = "dev.payment.amqp_host", value = "rabbitmq-dev.vardevops.online" },
   { name = "dev.payment.amqp_user", value = "roboshop" }
+  { name = "dev.dispatch.cart_host", value = "cart-dev.vardevops.online" },
+  { name = "dev.dispatch.cart_port", value = "8080" },
+  { name = "dev.dispatch.user_host", value = "user-dev.vardevops.online" },
+  { name = "dev.dispatch.user_port", value = "8080" },
+  { name = "dev.dispatch.amqp_host", value = "rabbitmq-dev.vardevops.online" },
+  { name = "dev.dispatch.amqp_user", value = "roboshop" }
 ]
 
 passwords = [
